@@ -1,6 +1,3 @@
-<head>
-  <script type="module" src="../../index.jsp"></script>
-</head>
 <p class="date"></p>
  I was forwarded
 <br>

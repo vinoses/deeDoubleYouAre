@@ -1,14 +1,12 @@
-<html>
 <head>
-  <title>Title</title>
-  <script rel="prefetch" type='text/javascript' src='/geeDoubleYouAre_war_exploded/dwr/engine.js'></script>
-  <script rel="prefetch" type='text/javascript' src='/geeDoubleYouAre_war_exploded/dwr/util.js'></script>
-  <script rel="prefetch" type='text/javascript' src='/geeDoubleYouAre_war_exploded/dwr/interface/JavaDate.js'></script>
-  <script rel="prefetch" type="text/javascript" src="/geeDoubleYouAre_war_exploded/resources/scripts/forward.js"></script>
+  <script type="module" src="../../index.jsp"></script>
 </head>
-<body>
 <p class="date"></p>
  I was forwarded
- <a id="home" href="#">Home</a>
-</body>
-</html>
+<br>
+And I can operate Dynamically
+<div id="clear" class="c">
+  <p>
+    <input value="Clear" type="button" id="cleari"/><br/>
+  </p>
+</div>

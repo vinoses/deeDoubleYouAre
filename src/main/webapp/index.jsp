@@ -42,12 +42,16 @@
   </div>
   <!-- load response from vinoses.App.sayHello -->
   <p class="p1"></p>
+
   <br>
   <!-- link to new page from vinoses.App.getInclude -->
+  <p id="forwardMemo"> DWR Java forwarded partial HTML</p>
   <div>
     <p>
-      <a id="javaforward" href="#">Go Forward</a>
+      <input value="Include Page" type="button" id="javaforward"/><br/>
+      Included Page:
     </p>
+    <div id="forward"></div>
   </div>
   </body>
 </html>

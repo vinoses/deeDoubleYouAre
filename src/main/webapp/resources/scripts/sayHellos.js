@@ -5,32 +5,38 @@ $( document ).ready(function() {
 
 	initialize();
 
+	$('*').click(function(){
+			if(this.id === 'forward') { clear(); }
+			if(this.id === 'javaforward') {  javaforward(); }
+			if(this.id === 'f1') { sayhello();}
+	});
+
 	function initialize() {
 		JavaDate.toLocaleString( function(data) {
 			$(".p2").text("").append(data);
 		});
 	}
 
-	$("#javaforward").click(function() {
-		javaforward();
-	});
+	function clear() {
+		$("#forward").hide();
+		$(".p1").text("");
+		initialize();
+	}
 
-	$("#f1").submit( function(e) {
-		e.preventDefault();
-		var name = $("#n1").val() + $("#n2").val();
-		app.sayHello(name, function( data ) {
-			$(".p1").text("").append(data);
+	function sayhello() {
+		$("#f1").submit( function(e) {
+			e.preventDefault();
+			var name = $("#n1").val() + $("#n2").val();
+			app.sayHello(name, function( data ) {
+				$(".p1").text("").append(data);
+			});
 		});
-	});
+	}
 
 	function javaforward() {
-
+		$("#forward").show();
 		app.getInclude(function(data) {
-			var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
-			win.document.body.innerHTML = data;
-			var newScript = document.createElement("script");
-			newScript.src = "/resources/scripts/forward.js";
-			win.appendChild(newScript);
+			dwr.util.setValue("forward", data, { escapeHtml:false });
 		});
 	}
 });

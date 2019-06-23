@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="/geeDoubleYouAre_war_exploded/resources/css/generic.css" />
   </head>
   <body>
-  <!-- Get Date with DWR created js - JavaDate - from java.Date -->
+  <!-- DWR Create - Get Date with DWR created js - JavaDate - from java.Date -->
   <p class="p2"></p>
   <br>
   <!-- Send data and get response through DWR created js - app from vinoses.App -->
@@ -40,18 +40,22 @@
       </div>
     </div>
   </div>
-  <!-- load response from vinoses.App.sayHello -->
+  <!-- DWR Create - load response from vinoses.App.sayHello -->
   <p class="p1"></p>
 
   <br>
-  <!-- link to new page from vinoses.App.getInclude -->
+  <!-- DWR Create - DWR HTML inject from vinoses.App.getInclude -->
   <p id="forwardMemo"> DWR Java forwarded partial HTML</p>
   <div>
     <p>
       <input value="Include Page" type="button" id="javaforward"/><br/>
       Included Page:
     </p>
+    <!--HTML Injected into #forward -->
     <div id="forward"></div>
   </div>
+
+  <!-- DWR Create & Convert - DWR Tabling -->
+  <a href="resources/jsp/tabling.jsp">DWR Tabling</a>
   </body>
 </html>

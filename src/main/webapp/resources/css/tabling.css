@@ -1,0 +1,11 @@
+html {
+  display: flex;
+  padding: 2px;
+  margin: 50px;
+  background: #f7f7f7;
+}
+table.plain {
+  background: lavender;
+  padding: 25px;
+  margin: 10px;
+}

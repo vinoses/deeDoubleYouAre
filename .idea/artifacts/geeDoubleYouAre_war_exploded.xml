@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="geeDoubleYouAre" />
+          <element id="module-output" name="deeDoubleYouAre" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.directwebremoting:dwr:3.0.2-RELEASE" />
@@ -21,7 +21,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/geeDoubleYouAre-1.0/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="geeDoubleYouAre/web/Web" />
+      <element id="javaee-facet-resources" facet="deeDoubleYouAre/web/Web" />
     </root>
   </artifact>
 </component>

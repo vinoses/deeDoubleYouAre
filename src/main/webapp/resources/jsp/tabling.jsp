@@ -11,6 +11,7 @@
   <title>Title</title>
   <link type="text/css" rel="stylesheet" href="../css/tabling.css">
   <script type='text/javascript' src='/geeDoubleYouAre_war_exploded/dwr/engine.js'></script>
+  <script type='text/javascript' src='/geeDoubleYouAre_war_exploded/dwr/interface/People.js'></script>
   <script type='text/javascript' src='/geeDoubleYouAre_war_exploded/dwr/util.js'></script>
   <script type="text/javascript" src="../scripts/tabling.js"></script>
 </head>
@@ -26,7 +27,7 @@
   </tr>
   </thead>
   <tbody id="peoplebody">
-  <tr id="pattern" style="display:none;">
+  <tr id="pattern" style="display:table-row;">
     <td>
       <span id="tableName">Name</span><br/>
       <small>  <span id="tableAddress">Address</span></small>
@@ -36,6 +37,7 @@
     <td>
       <input id="edit" type="button" value="Edit" onclick="editClicked(this.id)"/>
       <input id="delete" type="button" value="Delete" onclick="deleteClicked(this.id)"/>
+      <input id="fill" type="button" value="Fill" onclick="fillTable()"/>
     </td>
   </tr>
   </tbody>
